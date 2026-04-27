@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C75D4D2B-995B-437A-AD71-E2BDCE7B0EEB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE3D4357-FFA3-44D0-AFE4-60AF10A3A91A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEMANA7/PersonasTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "PersonasTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CE3D4357-FFA3-44D0-AFE4-60AF10A3A91A - 7669a4ae63f90209"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.personaNombre.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "CE3D4357-FFA3-44D0-AFE4-60AF10A3A91A - 5807a5b6efcf663d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.personaNombre.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "CE3D4357-FFA3-44D0-AFE4-60AF10A3A91A - a67da137bf3a7b0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.personaNombre.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "CE3D4357-FFA3-44D0-AFE4-60AF10A3A91A - 9b7196dade663973"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; SEMANA7.PersonasTableViewCell"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "CE3D4357-FFA3-44D0-AFE4-60AF10A3A91A - bd4a2c76efe14811"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SEMANA7.PersonasTableViewCell&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6BCF709-6A61-48C0-9BFA-0AE527A19F3E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEMANA7/PersonasTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "PersonasTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A6BCF709-6A61-48C0-9BFA-0AE527A19F3E - 8507aeff66540899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.PersonaImagen.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "A6BCF709-6A61-48C0-9BFA-0AE527A19F3E - 676111592dd65c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.PersonaImagen.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "A6BCF709-6A61-48C0-9BFA-0AE527A19F3E - 78bd64758ef0959c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.PersonaImagen.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "A6BCF709-6A61-48C0-9BFA-0AE527A19F3E - 9b7196dade663952"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; SEMANA7.PersonasTableViewCell"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11">
+               </Location>
+               <Location
+                  uuid = "A6BCF709-6A61-48C0-9BFA-0AE527A19F3E - bd4a2c76efe14830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEMANA7.PersonasTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SEMANA7.PersonasTableViewCell&gt;"
+                  moduleName = "SEMANA7.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tecsup/Documents/programacion-moviles-avanzado/SEMANA7/SEMANA7/PersonasTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
