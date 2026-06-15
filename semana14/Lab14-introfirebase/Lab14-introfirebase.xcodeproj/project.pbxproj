@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CDE1AD122FE05DD700B9A916 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CDE1AD112FE05DD700B9A916 /* FirebaseAuth */; };
+		CDE1AD142FE05DD700B9A916 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CDE1AD132FE05DD700B9A916 /* FirebaseCore */; };
+		CDE1AD162FE05DD700B9A916 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CDE1AD152FE05DD700B9A916 /* FirebaseDatabase */; };
+		CDE1AD212FE06BCA00B9A916 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CDE1AD202FE06BCA00B9A916 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CDE1AD002FE0592800B9A916 /* Lab14-introfirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab14-introfirebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CDE1AD332FE0721700B9A916 /* Exceptions for "Lab14-introfirebase" folder in "Lab14-introfirebase" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CDE1ACFF2FE0592800B9A916 /* Lab14-introfirebase */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CDE1AD022FE0592800B9A916 /* Lab14-introfirebase */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CDE1AD332FE0721700B9A916 /* Exceptions for "Lab14-introfirebase" folder in "Lab14-introfirebase" target */,
+			);
 			path = "Lab14-introfirebase";
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE1AD162FE05DD700B9A916 /* FirebaseDatabase in Frameworks */,
+				CDE1AD212FE06BCA00B9A916 /* FirebaseFirestore in Frameworks */,
+				CDE1AD142FE05DD700B9A916 /* FirebaseCore in Frameworks */,
+				CDE1AD122FE05DD700B9A916 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE1AD022FE0592800B9A916 /* Lab14-introfirebase */,
+				CDE1AD1F2FE06BCA00B9A916 /* Frameworks */,
 				CDE1AD012FE0592800B9A916 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +68,13 @@
 				CDE1AD002FE0592800B9A916 /* Lab14-introfirebase.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE1AD1F2FE06BCA00B9A916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +97,10 @@
 			);
 			name = "Lab14-introfirebase";
 			packageProductDependencies = (
+				CDE1AD112FE05DD700B9A916 /* FirebaseAuth */,
+				CDE1AD132FE05DD700B9A916 /* FirebaseCore */,
+				CDE1AD152FE05DD700B9A916 /* FirebaseDatabase */,
+				CDE1AD202FE06BCA00B9A916 /* FirebaseFirestore */,
 			);
 			productName = "Lab14-introfirebase";
 			productReference = CDE1AD002FE0592800B9A916 /* Lab14-introfirebase.app */;
@@ -94,6 +130,9 @@
 			);
 			mainGroup = CDE1ACF72FE0592800B9A916;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CDE1AD102FE05DD700B9A916 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CDE1AD012FE0592800B9A916 /* Products */;
 			projectDirPath = "";
@@ -253,6 +292,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lab14-introfirebase/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +324,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lab14-introfirebase/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +369,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDE1AD102FE05DD700B9A916 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDE1AD112FE05DD700B9A916 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE1AD102FE05DD700B9A916 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CDE1AD132FE05DD700B9A916 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE1AD102FE05DD700B9A916 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		CDE1AD152FE05DD700B9A916 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE1AD102FE05DD700B9A916 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		CDE1AD202FE06BCA00B9A916 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE1AD102FE05DD700B9A916 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDE1ACF82FE0592800B9A916 /* Project object */;
 }
