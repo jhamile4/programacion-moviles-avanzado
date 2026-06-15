@@ -8,10 +8,9 @@
 import SwiftUI
 import FirebaseAuth
 import FirebaseCore
+import GoogleSignIn
 
 struct AuthView: View {
-    @State private var email = ""
-    @State private var password = ""
     @State private var isSignedIn = false
     @State private var showAlert = false
     @State private var alertMessage = ""
@@ -28,30 +27,27 @@ struct AuthView: View {
                 Spacer()
                 
                 if isSignedIn {
-                    // Vista para usuarios autenticados
                     MessagesView()
                 } else {
-                    // Formulario de inicio de sesión / registro
-                    VStack(spacing: 15) {
-                        TextField("Email", text: $email)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
-                            .keyboardType(.emailAddress)
+                    VStack(spacing: 20) {
+                        Text("Bienvenido a la Aplicación")
+                            .font(.headline)
+                            .foregroundColor(.gray)
                         
-                        SecureField("Password", text: $password)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        
-                        HStack(spacing: 20) {
-                            Button("Sign In") {
-                                signIn()
+                        // Botón de Google
+                        Button(action: {
+                            signInWithGoogle()
+                        }) {
+                            HStack {
+                                Image(systemName: "g.circle.fill")
+                                    .font(.title2)
+                                Text("Sign In with Google")
+                                    .fontWeight(.semibold)
                             }
-                            .buttonStyle(PrimaryButtonStyle())
-                            
-                            Button("Sign Up") {
-                                signUp()
-                            }
-                            .buttonStyle(SecondaryButtonStyle())
+                            .frame(maxWidth: .infinity)
                         }
+                        .buttonStyle(PrimaryButtonStyle()) // Ahora sí lo encontrará
+                        
                     }
                     .padding(.horizontal, 30)
                 }
@@ -68,76 +64,48 @@ struct AuthView: View {
         .onAppear {
             checkAuthState()
         }
-        .onChange(of: isSignedIn) { oldValue, newValue in
-            // Limpia el formulario al cerrar sesión
-            if !newValue {
-                email = ""
-                password = ""
-            }
-        }
     }
     
-    // MARK: - Authentication Functions
+    // MARK: - Google Sign In Function
     
-    func signIn() {
-        guard !email.isEmpty && !password.isEmpty else {
-            alertMessage = "Please enter both email and password"
-            showAlert = true
+    func signInWithGoogle() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootViewController = windowScene.windows.first?.rootViewController else {
             return
         }
         
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { signInResult, error in
             if let error = error {
-                alertMessage = "Sign in failed: \(error.localizedDescription)"
+                alertMessage = "Google login failed: \(error.localizedDescription)"
                 showAlert = true
-                print("error.localizedDescription: '\(error.localizedDescription)'")
-            } else {
-                isSignedIn = true
-                alertMessage = "Sign in successful!"
-                showAlert = true
+                return
             }
-        }
-    }
-    
-    func signUp() {
-        guard !email.isEmpty && !password.isEmpty else {
-            alertMessage = "Please enter both email and password"
-            showAlert = true
-            return
-        }
-        
-        guard password.count >= 6 else {
-            alertMessage = "Password must be at least 6 characters"
-            showAlert = true
-            return
-        }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if let error = error {
-                alertMessage = "Sign up failed: \(error.localizedDescription)"
-                showAlert = true
-            } else {
-                isSignedIn = true
-                alertMessage = "Account created successfully!"
-                showAlert = true
+            
+            guard let user = signInResult?.user,
+                  let idToken = user.idToken?.tokenString else { return }
+            
+            let accessToken = user.accessToken.tokenString
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+            
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    alertMessage = "Firebase login failed: \(error.localizedDescription)"
+                    showAlert = true
+                } else {
+                    isSignedIn = true
+                    alertMessage = "Google Sign In successful!"
+                    showAlert = true
+                }
             }
-        }
-    }
-    
-    func signOut() {
-        do {
-            try Auth.auth().signOut()
-            isSignedIn = false
-            alertMessage = "Signed out successfully"
-            showAlert = true
-        } catch {
-            alertMessage = "Sign out failed: \(error.localizedDescription)"
-            showAlert = true
         }
     }
     
     func checkAuthState() {
-        // Escucha los cambios en el estado de autenticación de Firebase
         authStateListener = Auth.auth().addStateDidChangeListener { auth, user in
             DispatchQueue.main.async {
                 self.isSignedIn = user != nil
@@ -146,7 +114,7 @@ struct AuthView: View {
     }
 }
 
-// MARK: - Button Styles
+// MARK: - Button Styles (ESTO ES LO QUE FALTABA)
 
 struct PrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
