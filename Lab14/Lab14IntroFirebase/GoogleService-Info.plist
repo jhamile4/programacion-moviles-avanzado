@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>734627026023-uvlnmjqfj8a8gvv4o1m9fa0stlc3ph3u.apps.googleusercontent.com</string>
+	<string>734627026023-gurhamus7klvnob2pqg7bnfkiqb29n0u.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.734627026023-uvlnmjqfj8a8gvv4o1m9fa0stlc3ph3u</string>
+	<string>com.googleusercontent.apps.734627026023-gurhamus7klvnob2pqg7bnfkiqb29n0u</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBQlt_AnalUGZ0l2Wv6ixwrzPveH2dPZAA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>pe.edu.tecsup.Lab14-introfirebase</string>
+	<string>pe.edu.tecsup.dma.Lab14IntroFirebase</string>
 	<key>PROJECT_ID</key>
 	<string>app01-lab14pma</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:734627026023:ios:fe85b8b7f8a3c53d26f0c2</string>
+	<string>1:734627026023:ios:e224c88fc2494b2c26f0c2</string>
 </dict>
 </plist>
